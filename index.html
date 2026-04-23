@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IRON TEDDY - Klub Strzelecki</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ── NAV ── -->
+  <nav>
+    <!--  <a href="#" class="nav-logo">
+      <img src="images/iron-logo-128x91.png" alt="Iron Teddy logo">
+      <span class="nav-logo-text">IRON <span>TEDDY</span></span>
+    </a> --> 
+    <ul class="nav-links">
+      <li><a href="#klub">O Klubie</a></li>
+      <li><a href="#pozwolenie">Pozwolenie</a></li>
+      <li><a href="#dokumenty">Dokumenty</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+      <li><a href="https://www.facebook.com/ks.iron.teddy/events" target="_blank">Facebook ↗</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="scanlines"></div>
+    <div class="grain"></div>
+
+    <!-- Logo watermark -->
+    <img src="images/iron-logo-128x91.png" alt="" class="hero-logo-mark" aria-hidden="true">
+
+    <!-- Targeting reticle -->
+    <svg class="reticle" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="200" cy="200" r="190" stroke="#C87606" stroke-width="1"/>
+      <circle cx="200" cy="200" r="150" stroke="#C87606" stroke-width="0.5" stroke-dasharray="4 8"/>
+      <circle cx="200" cy="200" r="100" stroke="#C87606" stroke-width="1"/>
+      <circle cx="200" cy="200" r="50" stroke="#C87606" stroke-width="0.5"/>
+      <circle cx="200" cy="200" r="6" fill="#C87606"/>
+      <line x1="200" y1="0" x2="200" y2="140" stroke="#C87606" stroke-width="1"/>
+      <line x1="200" y1="260" x2="200" y2="400" stroke="#C87606" stroke-width="1"/>
+      <line x1="0" y1="200" x2="140" y2="200" stroke="#C87606" stroke-width="1"/>
+      <line x1="260" y1="200" x2="400" y2="200" stroke="#C87606" stroke-width="1"/>
+      <line x1="10" y1="160" x2="30" y2="160" stroke="#C87606" stroke-width="0.5"/>
+      <line x1="370" y1="160" x2="390" y2="160" stroke="#C87606" stroke-width="0.5"/>
+      <line x1="10" y1="200" x2="30" y2="200" stroke="#C87606" stroke-width="0.5"/>
+      <line x1="370" y1="200" x2="390" y2="200" stroke="#C87606" stroke-width="0.5"/>
+      <line x1="10" y1="240" x2="30" y2="240" stroke="#C87606" stroke-width="0.5"/>
+      <line x1="370" y1="240" x2="390" y2="240" stroke="#C87606" stroke-width="0.5"/>
+      <text x="210" y="185" fill="#C87606" font-size="8" font-family="monospace">200m</text>
+      <text x="210" y="215" fill="#C87606" font-size="8" font-family="monospace">IRON TEDDY</text>
+      <rect x="168" y="168" width="64" height="64" stroke="#C87606" stroke-width="0.5" stroke-dasharray="2 4"/>
+    </svg>
+
+    <div class="hero-eyebrow">
+      Stowarzyszenie
+    </div>
+
+    <h1 class="hero-title">
+      <span class="hero-title-line">KLUB STRZELECKI</span>
+      <span class="hero-title-line">IRON TEDDY</span>
+      <!-- <span class="hero-title-line">TEDDY</span> -->
+    </h1>
+
+    <div class="hero-bottom">
+      <p class="hero-desc">
+        Promocja i rozwój strzelectwa sportowego. Szkolenia, treningi, zawody, egzaminy, pozwolenia. Dołącz do nas - strzelamy z pasją od 2021 roku.
+      </p>
+      <div class="hero-nav-cards">
+        <a href="#klub" class="hero-nav-card">
+          <span class="card-icon">🎯</span>
+          <span class="card-label">O Klubie</span>
+        </a>
+        <a href="#pozwolenie" class="hero-nav-card">
+          <span class="card-icon">📋</span>
+          <span class="card-label">Pozwolenie<br>na broń</span>
+        </a>
+        <a href="#dokumenty" class="hero-nav-card">
+          <span class="card-icon">📁</span>
+          <span class="card-label">Dokumenty/<br>Członkostwo</span>
+        </a>
+        <a href="https://www.facebook.com/ks.iron.teddy/events" target="_blank" class="hero-nav-card">
+          <span class="card-icon">f</span>
+          <span class="card-label">Facebook</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ── TICKER ── -->
+  <div class="ticker">
+    <div class="ticker-inner">
+      <span>STRZELECTWO SPORTOWE</span>
+      <span>·</span>
+      <span>SZKOLENIA I TRENINGI</span>
+      <span>·</span>
+      <span>EGZAMINY NA PATENT</span>
+      <span>·</span>
+      <span>POZWOLENIE NA BROŃ</span>
+      <span>·</span>
+      <span>KOLEKCJONERSTWO</span>
+      <span>·</span>
+      <span>REKREACJA</span>
+      <span>·</span>
+      <span>ZAWODY SPORTOWE</span>
+      <span>·</span>
+      <span>STRZELECTWO SPORTOWE</span>
+      <span>·</span>
+      <span>SZKOLENIA I TRENINGI</span>
+      <span>·</span>
+      <span>EGZAMINY NA PATENT</span>
+      <span>·</span>
+      <span>POZWOLENIE NA BROŃ</span>
+      <span>·</span>
+      <span>KOLEKCJONERSTWO</span>
+      <span>·</span>
+      <span>REKREACJA</span>
+      <span>·</span>
+      <span>ZAWODY SPORTOWE</span>
+      <span>·</span>
+    </div>
+  </div>
+
+  <!-- ── O KLUBIE ── -->
+  <section id="klub">
+    <div class="klub-text">
+      <div class="section-label">O Stowarzyszeniu</div>
+      <h2>PASJA<br><em>DO CELU.</em></h2>
+      <p>Stowarzyszenie Klub Strzelecki IRON TEDDY to inicjatywa strzelców dla strzelców. Działamy na rzecz promocji i rozwoju strzelectwa oraz kultury strzeleckiej - od pierwszego treningu po wywalczone medale.</p>
+      <p>Wspieramy w nabywaniu i rozwijaniu kompetencji strzeleckich, sporcie strzeleckim, kolekcjonerstwie broni palnej, a także w całym procesie uzyskiwania i utrzymania pozwolenia na broń. Klub to nie tylko strzelnica - to społeczność.</p>
+    </div>
+    <div class="klub-visual">
+      <div class="klub-img-frame">
+        <img src="images/adobestock-145577530-957x638.jpg" alt="Pistolety Iron Teddy" loading="lazy">
+      </div>
+      <div class="klub-corner-tag">tekst</div>
+    </div>
+  </section>
+
+  <!-- ── STATS ── -->
+  <!-- <div class="stats-bar">
+    <div class="stat">
+      <span class="stat-num">659</span>
+      <span class="stat-label">Numer telefonu: 659 126 176</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">100m</span>
+      <span class="stat-label">Dystans strzelnicy</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">2059</span>
+      <span class="stat-label">Koszt całkowity pozwolenia (zł)</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">KRS</span>
+      <span class="stat-label">0000926807</span>
+    </div>
+  </div> -->
+
+  <!-- ── POZWOLENIE ── -->
+  <section id="pozwolenie">
+    <div class="poz-header">
+      <h2>POZWOLENIE<br><em>NA BROŃ</em>PALNĄ</h2>
+      <p>Wszystko co musisz wiedzieć, żeby legalnie strzelać. Procedura jest jasna i przejrzysta - a my przeprowadzimy Cię przez nią krok po kroku.</p>
+    </div>
+
+    <div class="poz-steps">
+      <div class="poz-step">
+        <span class="poz-step-num">01.</span>
+        <span class="poz-step-title">Najogólniej</span>
+        <p>W Polsce stosowane są dwa główne cele pozwolenia na broń - do celów sportowych oraz do celów kolekcjonerskich. Wydaje je Komendant Wojewódzki Policji.</p>
+      </div>
+      <div class="poz-step">
+        <span class="poz-step-num">02.</span>
+        <span class="poz-step-title">To nie prawda</span>
+        <p>Że pozwolenie ma charakter uznaniowy - to miejska legenda. Wymagania są jasno określone w przepisach, a wydziały KWP aktywnie pomagają w ich realizacji.</p>
+      </div>
+      <div class="poz-step">
+        <span class="poz-step-num">03.</span>
+        <span class="poz-step-title">Patent strzelecki</span>
+        <p>Egzamin przed komisją Polskiego Związku Strzelectwa Sportowego ma wagę egzaminu państwowego. Przygotujemy Cię do zdania go za pierwszym razem.</p>
+      </div>
+      <div class="poz-step">
+        <span class="poz-step-num">04.</span>
+        <span class="poz-step-title">Klub</span>
+        <p>Żeby przystąpić do egzaminu PZSS trzeba być członkiem klubu. Nasz zarząd wyda zaświadczenie, a instruktorzy przygotują Cię do całego procesu administracyjnego.</p>
+      </div>
+      <div class="poz-step">
+        <span class="poz-step-num">05.</span>
+        <span class="poz-step-title">Badania</span>
+        <p>Potrzebne będzie orzeczenie lekarskie, w tym badanie psychiatryczne i psychologiczne. To nie egzamin - to ocena ogólnej sprawności, bez powodów do obaw.</p>
+      </div>
+      <div class="poz-step">
+        <span class="poz-step-num">06.</span>
+        <span class="poz-step-title">Pytania?</span>
+        <p>Zadzwoń. To nic nie kosztuje. Nasz zespół odpowie na każde pytanie i pomoże zaplanować cały proces od pierwszego dnia.</p>
+      </div>
+    </div>
+
+    <div class="cost-banner">
+      <div>
+        <div class="cost-banner-label">Szacunkowy koszt całkowity</div>
+        <div class="cost-banner-amount">2 059 zł</div>
+      </div>
+      <div style="font-family:'Space Mono',monospace;font-size:11px;color:rgba(0,0,0,0.7);line-height:2;">
+        <div>Wpisowe + składka: 500 zł + 250 zł</div>
+        <div>Egzamin na patent: 400 zł</div>
+        <div>Badania lekarskie: 650 zł</div>
+        <div>Opłata skarbowa: 242 zł · Promesa: 17 zł</div>
+      </div>
+      <a href="tel:659126176" class="cost-banner-cta">Zadzwoń teraz →</a>
+    </div>
+  </section>
+
+  <!-- ── DOKUMENTY ── -->
+  <section id="dokumenty">
+    <div style="max-width:1400px;margin:0 auto;">
+      <div class="section-label">Dokumenty i Członkostwo</div>
+      <h2 style="font-family:'Bebas Neue',sans-serif;font-size:clamp(40px,5vw,80px);line-height:0.9;">
+        DOŁĄCZ DO<br><span style="color:var(--amber);">NASZEJ SPOŁECZNOŚCI</span>
+      </h2>
+    </div>
+    <div class="doc-grid">
+      <a href="assets/files/AAAodpis_pelny_926807_1638720407366.pdf" class="doc-card" target="_blank">
+        <div class="doc-icon">📄</div>
+        <div class="doc-title">Wpis do KRS</div>
+        <div class="doc-sub">Pełny odpis — nr 0000926807</div>
+      </a>
+      <a href="assets/files/Statut-23.10.2023r..pdf" class="doc-card" target="_blank">
+        <div class="doc-icon">📜</div>
+        <div class="doc-title">Statut</div>
+        <div class="doc-sub">Aktualny statut stowarzyszenia</div>
+      </a>
+      <a href="https://bit.ly/deklaracjaIRONTEDDY" class="doc-card" target="_blank">
+        <div class="doc-icon">✍️</div>
+        <div class="doc-title">Zapisz się do Klubu</div>
+        <div class="doc-sub">Deklaracja członkowska online</div>
+      </a>
+      <a href="assets/files/Klauzula-RODO.pdf" class="doc-card" target="_blank">
+        <div class="doc-icon">🔒</div>
+        <div class="doc-title">Klauzula RODO</div>
+        <div class="doc-sub">Polityka ochrony danych osobowych</div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ── WIDEO ── -->
+  <!-- <section id="wideo">
+    <div class="video-label">// IRON TEDDY — STRZELNICA</div>
+    <iframe src="https://www.youtube.com/embed/iXBWXhCCM-I?rel=0&mute=1&showinfo=0&autoplay=1&loop=1&playlist=iXBWXhCCM-I" allowfullscreen loading="lazy"></iframe>
+  </section> -->
+
+  <!-- ── KONTAKT ── -->
+  <section id="kontakt">
+    <div class="section-label">Kontakt i Dojazd</div>
+    <h2 style="font-family:'Bebas Neue',sans-serif;font-size:clamp(48px,6vw,96px);line-height:0.9;">
+      ZNAJDŹ<br><span style="color:var(--amber);">NAS</span>
+    </h2>
+    <div class="kontakt-grid">
+      <div class="kontakt-block">
+        <h3>DANE STOWARZYSZENIA</h3>
+        <div class="kontakt-line">
+          <strong>Nazwa</strong>
+          Stowarzyszenie - Klub Strzelecki „IRON TEDDY"
+        </div>
+        <div class="kontakt-line">
+          <strong>Adres</strong>
+          Bukowa 15, 76-213 Gardna Wielka
+        </div>
+        <div class="kontakt-line">
+          <strong>KRS</strong>
+          0000926807
+        </div>
+        <div class="kontakt-line">
+          <strong>NIP</strong>
+          8472224099
+        </div>
+        <div class="kontakt-line">
+          <strong>REGON</strong>
+          520069384
+        </div>
+        <div class="kontakt-line">
+          <strong>Email</strong>
+          ks.ironteddy@gmail.com
+        </div>
+        <div class="kontakt-line">
+          <strong>Facebook</strong>
+          <a href="https://facebook.com/ks.iron.teddy" target="_blank" style="color:var(--amber);text-decoration:none;">fb.com/ks.iron.teddy</a>
+        </div>
+        <a href="tel:659126176" class="tel-cta">
+          <span>📞</span> +48 659 126 176
+        </a>
+      </div>
+      <div class="kontakt-block">
+        <h3>STRZELNICA</h3>
+        <div class="map-embed">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2373.5!2d15.2297971!3d54.1230682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4700739bfe2c396d:0x47f063c09489fd21!2sSTRZELNICA+%22STREFA%22!5e0!3m2!1spl!2spl!4v1700000000000"
+            allowfullscreen=""
+            loading="lazy">
+          </iframe>
+        </div>
+        <p style="margin-top:16px;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:2px;color:var(--muted);text-transform:uppercase;">
+          Strzelnica „Strefa" · Mielno-Unieście · <a href="https://www.google.com/maps/place/STRZELNICA+%22STREFA%22/@54.1221312,15.2587173,12.33z/data=!4m6!3m5!1s0x4700739bfe2c396d:0x47f063c09489fd21!8m2!3d54.1230682!4d15.2297971!16s%2Fg%2F11j1hm3qc0?entry=ttu&g_ep=EgoyMDI2MDQyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="color:var(--amber);text-decoration:none;">Google Maps ↗</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <!-- <div class="footer-logo">
+      <img src="images/iron-logo-128x91.png" alt="Iron Teddy">
+      IRON <span>TEDDY</span>
+    </div> -->
+    <div class="footer-copy">© 2026 Stowarzyszenie Klub Strzelecki Iron Teddy · KRS 0000926807</div>
+    <a href="https://www.facebook.com/ks.iron.teddy/events" class="footer-fb" target="_blank">Facebook Events ↗</a>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
